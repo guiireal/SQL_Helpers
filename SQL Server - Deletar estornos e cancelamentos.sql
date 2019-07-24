@@ -1,0 +1,1 @@
+DELETE FROM sophia.ESTORNOS WHERE TITULO IN (num_titulo)

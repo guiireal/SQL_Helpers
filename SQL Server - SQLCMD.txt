@@ -1,0 +1,15 @@
+Acessar SQL Server pelo SQLCMD:
+
+sqlcmd -U sa -P SENHA -S INSTANCIA
+
+Mudar a base para "MultiUser"
+ALTER DATABASE SophiA
+SET MULTI_USER
+WITH ROLLBACK IMMEDIATE
+GO
+
+Formatar a saída output
+:setvar SQLCMDMAXVARTYPEWIDTH 30
+:setvar SQLCMDMAXFIXEDTYPEWIDTH 30
+SELECT * from my_table
+GO
